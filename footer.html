@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    cursor: url(iconmonstr-save-as-lined.svg), auto;
+}
+    footer{
+        height: 100%;
+        min-height: 100vh;
+        min-width: 700px;
+    }
+    .footerContent{
+        background: rgb(255,84,148);
+        background: linear-gradient(0deg, rgba(255,84,148,1) 4%, rgba(69,204,80,1) 10%, rgba(251,52,30,1) 15%, rgba(30,31,251,1) 20%, rgba(251,52,30,1) 26%, rgba(251,30,209,1) 34%, rgba(29,223,14,1) 48%, rgba(251,52,30,1) 64%, rgba(30,57,251,1) 80%, rgba(251,52,30,1) 91%, rgba(100,30,251,1) 96%);
+        height: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+    }
+
+    @keyframes squareMotion {
+        0%{
+            transform: translateY(-700px);
+        }
+        
+        25%{
+            transform: translateX(200px);
+        }
+        50%{
+            transform: translateY(100px);
+        }
+        75%{
+            transform: translateX(-100px);
+        }
+        100%{
+            transform: translateY(-700px);
+        }
+    }
+    
+    .contact-info{
+        border: solid white 4px;
+        animation: squareMotion 1.8s ease-in-out both infinite;
+    }
+
+</style>
+<body>
+    <footer>
+        <h1>επαφές</h1>
+        <div class="footerContent">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: example@email.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+                <a href="http://t.me/doniverse" target="_blank" rel="noopener noreferrer">Congatc me</a>
+              </div>
+        </div>
+    </footer>
+</body>
+</html>

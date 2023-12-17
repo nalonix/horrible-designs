@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    animation: changeBackground 700ms infinite;
+    cursor: none;
+}
+@keyframes changeBackground {
+    0% {
+      background-color: #ff0000;
+    }
+    25% {
+      background-color: #00ff00;
+    }
+    50% {
+      background-color: #0000ff;
+    }
+    75% {
+      background-color: #ffff00;
+    }
+    100% {
+      background-color: #ff00ff;
+    }
+  }
+
+body::-webkit-scrollbar{
+    width: 100px;
+}
+body::-webkit-scrollbar-track{
+    background-color: teal;
+}
+body::-webkit-scrollbar-thumb{
+    /* background-color: pink; */
+    background-image: url('./kmon.jpg');
+}
+
+
+::-webkit-scrollbar{
+    width: 40px;
+    height: 40px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(243, 243, 243);
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+
+.cursor{
+    position: absolute;
+    pointer-events: none;
+    width: 32px;
+    height: 32px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+#failedLoadingScreen{
+    background: red;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    border: dotted green 2px;
+    color: orange;
+    position: fixed;
+    top: 0;
+    
+}
+
+#failedLoadingScreen button{
+    position: absolute;
+    top: 200px;
+    box-shadow: cadetblue;
+    color: red;
+
+}
+
+
+/* header */
+header{
+    height: 100vh;
+    border: solid pink 2px;
+    max-width: 200px;
+    overflow: scroll;
+    
+    color: white;
+}
+.headerContent{
+    background-image: url('./kmon.jpg');
+    height: 100%;
+    width: 400px;
+    background-size: 80px;
+}
+.headerContent h1{
+    color: green;
+}
+
+/* footer  */
+.footerIframe{
+    max-width: 230px;
+    max-height: 900px;
+}
+
+/* main  */
+main{
+    width: 300px;
+}
+.mainContent{
+    width: 800px;
+    font-size: x-small;
+}
+
+
+/* form  */
+select{
+    width: 40px;
+    height: 40px;
+}
+label{
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+.inputcontainer {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+  }
+
+input[type="tel"],
+input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+/* portfolio  */
+.portfolio {
+    border: dashed green 12px ;
+    overflow: scroll;
+    height: 500px;
+}
+.portfolioContent{
+    width: 900px;
+    height: 900px;
+    overflow: scroll;
+
+}
+.portfolioContent img{
+    transition-duration: 500ms;
+}
+.portfolioContent img:nth-child(1){
+    height: 200px;
+}
+.portfolioContent img:hover{
+    width: 400px;
+    transform: translate(30);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+   
+}
+
+/* moving text  */
+.movingtext{
+    min-height: 70px;
+    border: solid red 2px;
+    transform: translateY(-70px);
+    background-color: rgb(246, 14, 14);
+    color: orange;
+    font-size: xxx-large;
+
+   
+
+}
+@keyframes horizontalText {
+    from{
+        transform: translateX(1200px);
+    }
+    to{
+        transform: translateX(-2000px);
+    }
+}
+.movingtext p{
+    animation: horizontalText 10s both ease infinite;
+    text-wrap: nowrap;
+}
+
+/* stacked buttons  */
+.stackedButtons{
+    background-color: blue;
+}
+.stackedButtons a{
+    position: absolute;
+    display: block;
+    text-decoration: none;
+}
+
+
+/* age inpt  */
+.age-input {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .radio-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .radio-grid label {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .ageContainer{
+    border: green solid 2px;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+  }
+
+
+  .ageContainer::-webkit-scrollbar{
+    width: 100px;
+}
